@@ -13,5 +13,5 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> findAllBySkillsContaining(Skill skill);
     List<Employee> findAllByEmploymentDateAfter(LocalDate localDate);
     List<Employee> findAllBySkillsContainingAndEmploymentDateAfter(Skill skill, LocalDate localDate);
-    Employee findByEmail(String email);
+    //Employee findByEmail(String email);
 }
